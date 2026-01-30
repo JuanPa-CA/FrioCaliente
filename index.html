@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frio o Caliente</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor" id="tarjeta">
+        <h1 class="titulo">Frio o Caliente</h1>
+        
+        <div class="temporizador" id="timer">30</div>
+        
+        <p class="instruccion">Adivina un número de 1-100</p>
+        
+        <div class="input">
+            <input type="number" id="user-guess" placeholder="0" min="1" max="100">
+            <button id="btn-guess">INTENTAR</button>
+        </div>
+
+        <div id="feedback" class="feedback-msg">Inicia el juego</div>
+
+        <div class="historial">
+            <span>Intentos</span>
+            <div id="intentos"></div>
+        </div>
+
+        <button id="btn-reset" class="hidden">REINICIAR</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
